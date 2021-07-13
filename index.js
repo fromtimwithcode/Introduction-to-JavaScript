@@ -281,12 +281,31 @@ HINT - you may need to study tomorrow's content on arrays
 HINT - try looking up the .includes() method
 */
 
+// Can also be completed in 1 line: return string.match(/[aeiou]/gi).length;
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(string) {
+  return string.match(/[aeiou]/gi).length;
 }
 
+/*
+Using an array and .includes() method:
 
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+function vowelCounter(string) {
+  let counter = 0;
+  
+  for(let letter of string.toLowerCase()){
+    if (vowels.includes(letter)){
+      counter++;
+    }
+  }
+
+  return counter;
+}
+*/
+
+console.log(vowelCounter('This is a test.'));
 
 /*🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑 Please do not modify anything below this line 🛑🛑🛑🛑🛑🛑🛑🛑🛑🛑*/
 function foo(){
