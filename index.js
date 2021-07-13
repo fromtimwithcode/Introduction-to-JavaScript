@@ -20,7 +20,9 @@ Do the following:
    HINT: no function required
 */
 
+let votingAge = 18;
 
+console.log(votingAge >= 18);
 
 /*
 Task 1b - Values
@@ -33,9 +35,14 @@ Do the following:
    HINT: no function required
 */
 
+let a = 1;
+let b = 2;
 
+if (a != b){
+  a = b;
+}
 
-
+console.log(a);
 
 /*
 Task 1c - Convert Strings to Numbers
@@ -48,8 +55,10 @@ Do the following:
    HINT: look up the Number method
 */
 
+let string = "1999";
 
-
+console.log(parseInt(string)); // a way I knew how to do this
+console.log(Number(string)); // looked up the Number method
 
 /*
 Task 1d - Multiply
